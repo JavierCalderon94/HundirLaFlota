@@ -71,8 +71,7 @@ def verificar_hundidos(lista_barcos,tablero):
 
     return tablero
 
-def disparar(casilla, tablero):
-    repetir = True
+def disparar(casilla, tablero, repetir):
 
     if tablero[casilla] == "_":
         print("Agua")
@@ -88,7 +87,7 @@ def disparar(casilla, tablero):
 
     return tablero, repetir
 
-def disparo_random(tablero):
+def disparo_random(tablero, repetir):
     fallo = True
 
     while fallo:
