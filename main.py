@@ -2,6 +2,12 @@ import funciones as f
 import clases as cl
 import time
 
+print("\nVamos a jugar a un juego\n\n El juego será hundir la flota, contarás con un tablero de 10x10 con 10 barcos de diferente eslora")
+print("Se desarrollará por turnos, comenzarás tú a jugar y tendrás que seleccionar una casilla (fila, columna)")
+print("En caso de que aciertes, seguirás jugando, sino será el turno de la máquina. Ganará el primero que deje al rival sin barcos.")
+print("\n\n ¡Mucha suerte!")
+time.sleep(10)
+
 #Se solicita el nombre al jugador y crea los tableros y barcos de jugador y máquina
 jugador = cl.player(input("Hola jugador, por favor introduce tu nombre:\n"))
 jugador.crear_tablero()
